@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About Us</title>
+    <link href="about us.css" rel="stylesheet" >
+</head>
+<body>
+        <div class="background">
+        <div id="mySidebar" class="sidebar">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                <a href="website.html">Home</a>
+                <a href="about us.html">About Us</a>
+                <a href="hotels.html">Hotels & Packages</a>
+                <a href="gallery.html">Gallery</a>
+              </div>
+              
+              <div id="main">
+                <button class="openbtn" onclick="openNav()">☰</button>  
+              </div>
+              <script>
+                    function openNav() {
+                      document.getElementById("mySidebar").style.width = "250px";
+                      document.getElementById("main").style.marginLeft = "250px";
+                    }
+                    
+                    function closeNav() {
+                      document.getElementById("mySidebar").style.width = "0";
+                      document.getElementById("main").style.marginLeft= "0";
+                    }
+                    </script>
+                <div class="abouttxt">
+                <h1 style="text-align: center;color:rgb(255, 255, 255)">About Us</h1>
+                <br>
+                <p>Wayfarer have been organizing an adventurous trip all over Nepal.The 
+                   platform organizes hotels and offers packages along with amazing 
+                   deals. Now, experience treking, mountaineering, bungee jumping, mountain biking,
+                   cycling, canoeing, scuba diving, rafting, kayanking, hiking, exploring, 
+                   caving and rock-climbing along with our team and explore the highly rich country 
+                   on religion,culture and ethics.Get to know more about cultural values of different cultures and 
+                   traditions closely. </p>
+                </div>
+              </div>
+                <div class="footer">
+                    <p>Copyright&copy2019 Wayfarer(Nepal) Shristi Hamal3024
+                      Contact us at: 01-4781254
+                      Email: shristihamal@gmail.com</p>
+                    </div>
+</body>
+</html>

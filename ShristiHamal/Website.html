@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Website</title>
+    <link href="stylesweb.css" rel="stylesheet" >
+</head>
+<body>
+    <div class="slideshow-container">
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="website.html">Home</a>
+            <a href="about us.html">About Us</a>
+            <a href="hotels.html">Hotels & Packages</a>
+            <a href="gallery.html">Gallery</a>
+          </div>
+          
+          <div id="main">
+            <button class="openbtn" onclick="openNav()">☰</button>  
+          </div>
+                  <!-- Full-width images with number and caption text -->
+                  <div class="mySlides fade">
+                      <div class="numbertext">1/ 4</div>
+                      <img src="bg3.jpg" style="width:100%">
+                    </div>
+
+                  <div class="mySlides fade">
+                      <div class="numbertext">2 / 4</div>
+                      <img src="bg1.jpg" style="width:100%">
+                    </div>
+                  
+                    <div class="mySlides fade">
+                      <div class="numbertext">3/ 4</div>
+                      <img src="bg2.jpg" style="width:100%">
+                    </div>
+                    
+                    <div class="mySlides fade">
+                      <div class="numbertext">4 / 4</div>
+                      <img src="bg.jpg" style="width:100%">
+                    </div>
+
+                    <script>
+                        function openNav() {
+                          document.getElementById("mySidebar").style.width = "250px";
+                          document.getElementById("main").style.marginLeft = "250px";
+                        }
+                        
+                        function closeNav() {
+                          document.getElementById("mySidebar").style.width = "0";
+                          document.getElementById("main").style.marginLeft= "0";
+                        }
+                        </script>
+                    <div class="text-block"> 
+                        <h1>Wayfarer</h1>
+                        <p>Unleash the traveller inside you</p>
+                      </div>
+                       
+                   
+                </div>
+                 <br>
+                  
+                  <!-- The dots/circles -->
+                  <div style="text-align:center">
+                      <span class="dot" onclick="currentSlide(1)"></span> 
+                      <span class="dot" onclick="currentSlide(2)"></span> 
+                      <span class="dot" onclick="currentSlide(3)"></span> 
+                      <span class="dot" onclick="currentSlide(4)"></span> 
+                </div>
+                 
+               <script>
+                    var slideIndex = 0;
+                    showSlides();
+                    
+                    function showSlides() {
+                      var i;
+                      var slides = document.getElementsByClassName("mySlides");
+                      var dots = document.getElementsByClassName("dot");
+                      for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";  
+                      }
+                      slideIndex++;
+                      if (slideIndex > slides.length) {slideIndex = 1}    
+                      for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                      }
+                      slides[slideIndex-1].style.display = "block";  
+                      dots[slideIndex-1].className += " active";
+                      setTimeout(showSlides, 3000); 
+                    }
+                    </script>
+              </div>    
+          <div class="footer">
+            <p>Copyright&copy2019 Wayfarer(Nepal)Shristi Hamal3024
+              <b>Contact us at:</b> 01-4781254
+                  <b>Email:</b> shristihamal@gmail.com</p>
+            </div>
+          
+</body>
+</html>
