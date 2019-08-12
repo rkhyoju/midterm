@@ -1,0 +1,401 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+   margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#nav a {
+  position: absolute;
+  left: -80px;
+  transition: 0.3s;
+  padding: 15px;
+  width: 120px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  border-radius: 0 5px 5px 0;
+}
+
+#nav a:hover {
+  left: 0;
+}
+
+#home {
+  top: 20px;
+  background-color: #A05FD1;
+  opacity:0.75;
+}
+
+#blog {
+  top: 80px;
+  background-color: #2196F3;
+  opacity:0.75;
+}
+
+#feedbacks {
+  top: 140px;
+  background-color: #82D555 ;
+  opacity:0.75;
+}
+
+#cart {
+  top: 200px;
+  background-color:#CF3EAC;
+  opacity:0.75;
+}
+.bgimg {
+  opacity: 1%;
+  background-position: center;
+  background-size: cover;
+}
+
+.bgimg {
+  background-image: url(btss.jpg);
+  min-height: 90%;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color:#4354C2;
+  opacity:0.50px;
+  color: black;
+
+  padding: 18px;
+  font-size: 23px;
+  letter-spacing: 5px;
+}
+
+#sliderbox{
+	position:relative;
+	width :3200px;
+	animation-name: slideranimation;
+	animation-duration: 7s; 
+	animation-iteration-count: infinite;
+}
+
+#sliderbox img{
+	float:left;
+}
+
+@keyframes slideranimation{
+	0%{
+		left:0px;
+	}
+	20%{
+		left: 0px;
+	}
+    25%{
+    	left:-200px;
+    }
+    45%{
+    	left:-200px;
+    }
+    50%{
+    	left: -400px;
+    }
+    70%{
+       left: -400px;
+    }
+    75%{
+    	left:-600px;
+    }
+    90%{
+    	left:800px;
+    }
+}
+* {
+  box-sizing: border-box;
+}
+.chu {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  height: 370px; 
+  margin-top: 10px ;
+
+}
+.chickenlin:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column1 {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  height: 400px;
+}
+
+.row1:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+.container1 {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  transition: .5s ease;
+
+}
+.middle {
+  transition: .9s ease;
+  opacity: 0;
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  text-align: center;
+}
+
+.container1:hover .image {
+   opacity:0.75;
+}
+
+.container1:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: transparent;
+  color: black;
+  font-size: 20px;
+  padding: 16px 32px;
+}
+
+.row1:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+  .column2 {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 350px;
+}
+.row2:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+
+<div id="nav" class="nav">
+  <a href="#" id="home">Home</a>
+  <a href="#" id="blog">Search</a>
+  <a href="feedback.html" id="feedbacks">Feedbacks</a>
+  <a href="#" id="cart">Cart</a>
+</div>
+
+<div class="bgimg">
+<div class="caption">
+  <span class="border"><a href="shop.html"><strong>SHOP NOW</strong></span></a>
+</div>
+</div>
+<div style="margin-top: 70px"><h1><center>WHAT'S NEW?</center></h1></div>
+
+	<div class="container">
+	<div id="sliderbox">
+		<img src="never.jpg" style="width:200px; height:150px">
+		<img src="ring.jpg" style="width:200px; height:150px">
+		<img src="chimchim.jpg" style="width:200px; height:150px">
+		<img src="socks.jpg" style="width:200px; height:150px">
+		<img src="bpshirt.jpg" style="width:200px; height:150px">
+		<img src="btshoodie.jpg" style="width:200px; height:150px">
+		<img src="dark.jpg" style="width:200px; height:150px">
+		<img src="ver 1.jpg" style="width:200px; height:150px">
+		<img src="2.jpg" style="width:200px; height:150px">
+	</div>
+</div>
+
+
+<hr>    
+<div style="margin-top:50px"><h1><center>BEST SELLERS!</center></h1></div>
+
+<div class="chickenlin">
+  <div class="chu">
+    <center><img src="kill.jpg" style="float:top; width:200px; height:200px;">
+    <h4 style="text-align: center">Kill this love set</h4>
+    <p style="text-align: center; color:#1FC2D8">Rs.1200 NRP</p>
+    <img src="tar.png" style="width:110px; height:30px"></center>
+  </div>
+  <div class="chu">
+  <center> <img src="offshou.jpg" style="float:top; width:200px; height:200px">
+    <h4 style="text-align: center">Persona Offshoulder t-shirt</h4>
+    <p style="text-align: center; color:#1FC2D8"> Rs.1200 NRP</p>
+    <img src="tar.png" style="width:110px; height:30px"></center>
+  </div>
+  <div class="chu">
+   <center><img src="btsbag.jpg" style="float:top; width:200px; height:200px">
+    <h4 style="text-align: center">BTS galaxy-printed Bag</h4>
+    <p style="text-align: center; color:#1FC2D8">Rs.1200 NRP</p>
+    <img src="tar.png" style="width:110px; height:30px"></center>
+  </div>
+  <div class="chu">
+   <center><img src="converse.jpg" style="float:top; width:200px; height:200px">
+    <h4 style="text-align: center">Bts-glowing Converse</h4>
+    <p style="text-align: center; color:#1FC2D8">Rs.1200 NRP</p>
+    <img src="tar.png" style="width:110px; height:30px"></center>
+  </div>
+</div>
+
+
+<div class="chickenlin">
+  <div class="chu">
+    <center><img src="cropset.jpg" style="float:top; width:200px; height:200px;">
+    <h4 style="text-align: center">BTS cropset for girls</h4>
+    <p style="text-align: center; color:#1FC2D8">Rs.1200 NRP</p>
+    <img src="tar.png" style="width:110px; height:30px"></center>
+  </div>
+  <div class="chu">
+  <center> <img src="bt21key.jpg" style="float:top; width:200px; height:200px">
+    <h4 style="text-align: center">BT21 Keyrings</h4>
+    <p style="text-align: center; color:#1FC2D8"> Rs.1200 NRP</p>
+    <img src="tar.png" style="width:110px; height:30px"></center>
+  </div>
+  <div class="chu">
+   <center><img src="bpsocks.jpg" style="float:top; width:200px; height:200px">
+    <h4 style="text-align: center">Blackpink socks</h4>
+    <p style="text-align: center; color:#1FC2D8">Rs.1200 NRP</p>
+    <img src="tar.png" style="width:110px; height:30px"></center>
+  </div>
+  <div class="chu">
+   <center><img src="boots.jpg" style="float:top; width:200px; height:200px">
+    <h4 style="text-align: center">Bts Damboots</h4>
+    <p style="text-align: center; color:#1FC2D8">Rs.1200 NRP</p>
+    <img src="tar.png" style="width:110px; height:30px"></center>
+  </div>
+</div>
+
+
+<div class="chickenlin">
+  <div class="chu">
+    <center><img src="sweatshirt.jpg" style="float:top; width:200px; height:200px;">
+    <h4 style="text-align: center">BT21-printed sweatshirts</h4>
+    <p style="text-align: center; color:#1FC2D8">Rs.1200 NRP</p>
+    <img src="tar.png" style="width:110px; height:30px"></center>
+  </div>
+  <div class="chu">
+  <center> <img src="quotes.jpg" style="float:top; width:200px; height:200px">
+    <h4 style="text-align: center">Persona Offshoulder t-shirt</h4>
+    <p style="text-align: center; color:#1FC2D8"> Rs.1200 NRP</p>
+    <img src="tar.png" style="width:110px; height:30px"></center>
+  </div>
+  <div class="chu">
+   <center><img src="wintercap.jpg" style="float:top; width:200px; height:200px">
+    <h4 style="text-align: center">Winter-cap with members name</h4>
+    <p style="text-align: center; color:#1FC2D8">Rs.1200 NRP</p>
+    <img src="tar.png" style="width:110px; height:30px"></center>
+  </div>
+  <div class="chu">
+   <center><img src="puzzletee.jpg" style="float:top; width:200px; height:200px">
+    <h4 style="text-align: center">BTS puzzle Tee</h4>
+    <p style="text-align: center; color:#1FC2D8">Rs.1200 NRP</p>
+    <img src="tar.png" style="width:110px; height:30px"></center>
+  </div>
+</div>
+
+<hr>
+<h1 style="text-align: center ">Shop our exclusive Merchandise</h1>
+<div class="row1">
+  <div class="column1">
+  	<div class="container1">
+    <a href="album.html"><img src="blacktan.jpg" class="image" style="float:top;width: 300px;height: 330px; border-radius: 20px;"> </a>
+    <div class="middle">
+    <div class="text"><strong>BTS AND BLACKPINK ALBUMS </strong></div>
+  </div>
+</div>
+  </div>
+  <div class="column1">
+  	<div class="container1">
+    <img src="acce.jpg" class="image" style="float:top;width: 300px;height:330px; border-radius: 20px">
+     <div class="middle">
+    <div class="text"><strong>ACCESSORIES</strong></div>
+  </div>
+</div>
+  </div>
+  <div class="column1">
+  	<div class="container1">
+    <a href="bt21.html"><img src="BTBo.jpg" class="image" style="float:top;width: 300px;height: 330px; border-radius: 20px;"> </a>
+    <div class="middle">
+    <div class="text"><strong>BT21 MERCH</strong></div>
+  </div>
+</div>
+  </div>
+  <div class="column1">
+  	<div class="container1">
+    <img src="lightstick.jpg" class="image" style="float:top;width: 300px;height:330px; border-radius: 20px">
+     <div class="middle">
+    <div class="text"><strong>Lightsticks</strong></div>
+  </div>
+</div>
+  </div>
+</div>
+<div style="background-color: black; margin-top: 50px; height:550px">
+	<hr style="border: 1px solid green">
+	<div class="row2" style="color:white">
+  <div class="column2">
+     <center><img src="bbk.jpg" style="width:240px;height:250px;"></center>
+    </div>
+  <div class="column2">
+    <h3 style="text-decoration: underline">Know Us</h3>
+    <div style="color:grey">
+    <h5>About Us</h5>
+    <h5>Terms and policies</h5>
+    <h5>Privacy</h5>
+    <h5>Business Enquiries</h5>
+    <h5>Contact Us</h5>
+</div>
+  </div>
+  <div class="column2">
+    <h3 style="text-decoration: underline">Order Information</h3>
+    <div style="color:grey">
+    <h5>Track Order</h5>
+    <h5>Shipping</h5>
+    <h5>FAQ</h5>
+    <h5>Refunds and Cancellations</h5>
+    <h5>Payment Mehtod</h5>
+    <h5>Warrenty and Return</h5>
+    <h5>Sizing Guide</h5>
+</div>
+  </div>
+</div>
+<hr style="border: 1px solid grey; width: 700px">
+<div>
+	  <center style="margin:15px"><img src="facebook.png" style="float:center;width:25px;height:25px;">
+      <img src="pin.jpg" style="float:center;width:25px;height:25px;">
+      <img src="instag.png" style="float:center;width:25px;height:25px;">
+      <img src="you.jpg" style="float:center;width:25px;height:25px;"></center>
+      <hr style="border: 1px solid grey; width: 700px">
+		</div>
+		<div class="footer">
+  <p style="color:grey;margin-left: 320px; display:inline"> &copy;BlackBangtanMerch</p>
+  <div style="float:right; display:inline; margin-right: 320px">
+      <img src="master.png" style="width:50px;height:25px;">
+      <img src="visa.png" style="width:50px;height:25px;">
+      <img src="paypal.png" style="width:80px;height:25px;">
+  </div>
+</div>
+</div>
+</html>
