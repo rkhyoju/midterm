@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html>	
+<head>
+	<title> About</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+		*,
+*::before,
+*::after{
+	margin: 0;
+	padding:0;
+	box-sizing: border-box;
+	background-color: #eee;
+}
+
+
+html{
+	font-size: 10px;
+	font-family: "Roboto", sans-serif;
+}
+
+
+header{
+	width: 100%;
+	height: 100vh;
+	background-color: #eee;
+	position: relative;
+	
+}
+
+.overlay{
+	width: 100%;
+	height: 100vh;
+	background-color: rgba(0,0,0,.85);
+	position: fixed;
+	transform: scaleX(0);
+	opacity: 0;
+	transform: opacity 1s;
+}
+
+
+.menu{
+	padding: 2rem 2.5rem;
+	position: fixed;
+	top: 1rem;
+	right: 1rem;
+	background-color: #fff;
+	z-index: 999;
+	border-radius:  3px;
+	cursor: pointer;
+	display: none;
+}
+
+
+.bar,
+.bar::before,
+.bar::after{
+	content:"";
+	position: absolute;
+	width: 3rem;
+	height: 2px;
+	background-color: mediumpurple;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	transition: all 650ms;
+
+}
+
+.bar::before{
+	top: -2rem;
+}
+
+
+.bar::after{
+	top: 2rem;
+}
+
+
+.open .bar{
+	background-color: transparent;
+}
+
+
+.open .bar::before{
+	transform: rotate(45deg);
+}
+
+
+
+.open .bar::after{
+	transform: rotate(-45deg);
+}
+
+
+.open .bar::before,
+.open .bar::after{
+	top: 0;
+}
+
+
+nav{
+	width: 100%;
+	height: 6rem;
+	line-height: 6rem;
+	display:flex;
+	justify-content: space-evenly;
+	text-transform: uppercase;
+	background-color: #fff;
+	box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
+	overflow: hidden;
+}
+
+
+
+a{
+	text-decoration: none;
+}
+
+
+.brand{
+	font-size: 1.5rem;
+	color: #fff;
+	background-color: mediumpurple;
+	padding: 0 1rem;
+
+}
+
+
+nav ul{
+	display: flex;
+	list-style: none;
+}
+
+.nav-link{
+	font-size: 1.5rem;
+	color: mediumpurple;
+	margin-right: 2rem;
+	padding: 0 1rem;
+	display: block;
+	position: relative;
+	transform-style: preserve-3d;
+	transform-origin: top;
+	transition: transform 650ms cubic-bezier(0.55, 0.55, 0.675, 0.19);
+
+
+}
+
+
+.nav-link:hover{
+	transform: rotateX(90deg);
+}
+
+
+.nav-item:last-child .nav-link{
+	margin-right: 0;
+}
+
+
+.nav-link::after{
+	background-color: mediumpurple;
+	content: attr(data-text);
+	position: absolute;
+	left:0;
+	bottom: 0;
+	padding: inherit;
+	color: #fff;
+	transform: rotateX(-90deg);
+	transform-origin: top;
+}
+
+
+.nav-item:nth-child(odd){
+	animation: up 1s forwards;
+}
+
+
+.nav-item:nth-child(even){
+	animation: down 1s forwards;
+}
+
+
+
+
+@keyframes up{
+	from{
+		transform: translateY(-100%);
+		opacity: 0;
+	}
+	to{
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+
+@keyframes down{
+	from{
+		transform: translateY(100%);
+		opacity: 0;
+	}
+	to{
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+
+@media screen and (max-width: 768px){
+	.brand{
+		margin: 0 auto;
+		animation: initial;
+		border-radius: 100%;
+		width: 10rem;
+		height: 10rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	header{
+		perspective: 75rem;
+		overflow: hidden;
+	}
+
+	nav{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 30rem;
+		height: 100vh;
+		line-height: initial;
+		flex-direction: column;
+		box-shadow: none;
+		text-align: center;
+		transform: rotateY(180deg);
+		transform-origin: top left;
+		transition: transform 650ms cubic-bezier(0.55, 0.55, 0.675, 0.19);
+	}
+
+	nav ul{
+		flex-direction: column;
+		margin-top: -5rem;
+
+	}
+
+	.nav-item:nth-child(n){
+		animation: initial;
+	}
+
+	.nav-link{
+		margin: 2rem 0;
+	}
+
+	header.open nav{
+		transform: rotateY(0);
+	}
+
+	.menu{
+		display: block;
+	}
+
+	.overlay.open{
+		opacity: 1;
+		transform: scaleX(1);
+	}
+}
+
+
+
+.Bigcontainer {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+
+.bottom-left {
+  position: absolute;
+  bottom: 240px;
+  left: 6px;
+  font-size: 60px;
+  color: #24ff92;
+  width:800px;
+  text-decoration: none;
+}
+
+.recepies{
+	text-align: center;
+	width:800px;
+	margin-left: 220px;
+	margin-top: 50px;
+}
+
+.recepies h4{
+	font-size: 30px;
+}
+
+.recepies p{
+	font-size:15px;
+	margin-top: 10px;
+}
+
+.chocolate{
+	margin-top: 50px;
+	display: inline-flex;
+
+}
+
+.concept{
+	text-align: center;
+	margin-left: 60px;
+	margin-top: 25px;
+	width:500px;
+}
+
+.concept h4{
+	font-size: 50px;
+}
+.concept p{
+	font-size: 25px;
+	text-align: justify;
+}
+
+.tasty{
+	display: inline-flex;
+	margin-top: 50px;
+}
+
+.soil{
+	text-align: center;
+	margin-left: 140px;
+	margin-top: 25px;
+
+}
+
+.soil h4{
+	font-size: 50px;
+	width:200px;
+	margin-left: 100px;
+}
+
+.soil p{
+	font-size: 25px;
+}
+
+.field{
+	margin-left: 100px;
+}
+
+.background{
+	background-image: url(marble.png);
+	display: inline-flex;
+	margin-left:150px;
+	margin-top: 90px;
+}
+
+.alternative h4{
+	 font-size: 70px;
+	width:300px;
+	margin-left: 100px;
+	margin-top: 50px;
+}
+
+.alternative p{
+	font-size: 25px;
+}
+
+.join{
+	margin-top:20px;
+	text-align:center;
+	font-family: Bookman;
+
+}
+
+.join h3{
+	font-size: 50px;
+
+}
+
+.join p{
+	font-size: 30px;
+}
+.date{
+	margin-top: 8px;
+	text-align: center;
+	font-size: 20px;
+	width:850px;
+	margin-left: 200px;
+}
+
+.flexwala{
+	display: inline-flex;
+	padding:60px;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-left: 100px;
+}
+
+.social{
+	text-align: center;
+	font-size: 33px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.middle{
+	position: absolute;
+	width:100%;
+	text-align: center;
+}
+
+.btn{
+	display: inline-block;
+	width: 90px;
+	height: 90px;
+	background:#f1f1f1;
+	margin:10px;
+	border-radius: 30%;
+	box-shadow: 0 5px 15px -5px #00000070;
+	color: #3498db;
+	overflow: hidden;
+	position: relative;
+}
+
+.btn img{
+	margin-top: 25px;
+	line-height: 90px;
+	font-size: 26px;
+	transition: 0.2s linear;
+}
+
+.btn:hover img{
+	transform: scale(1.3);
+	color: #f1f1f1;
+}
+
+
+
+
+	</style>
+</head>
+<body >
+	<header>
+		<div class="menu">
+			<div class="bar"></div>
+		</div>
+		<div class="overlay"></div>
+		<nav>
+			<a href="index.html" class="brand">Foodismis</a>
+			<ul>
+				<li class="nav-item">
+					<a href="index.html" target="_self" class="nav-link" data-text="Home">Home</a>
+				</li>
+				<li class="nav-item">
+					<a href="about.html" class="nav-link" data-text="About">About</a>
+				</li>
+				</li>
+				<li class="nav-item">
+					<a href="contacts.html " class="nav-link" data-text="Contacts">Contacts</a>
+				</li>
+			</ul>
+		</nav>
+<div class="Bigcontainer">
+  <img src="laptop.jpg" alt="feed" style="width:100%; height: 450px">
+  <div class="bottom-left"><strong>THE COMPLETE AND BALANCED MEAL</strong></div>
+</div>
+
+<div class="recepies">
+	<h4>Foodismis has many different recepies that meets teh need of active people. Foodismis covers all the nutritional values that you need in your daily life meaning your body wont suffer from any kind of discomfort.</h4>
+	<p>Foodismis is neither a dietary nor an enerziging product. Inste it is the complete meal for those people who does not have enough time to prepare food of their own. The food that are prepared in the Foodismis is all made on the basis of your requirement in a way that it does not harm your body.</p>
+	</div> 
+
+	<div class="chocolate">
+		<div class="concept">
+			<h4>A</h4>
+			<h4>Revolutionary Concept</h4>
+			<p>While we regularly skip our meal our body is being harmed internally which need to be taken care of which we take care in a delicious way.</p>
+			<p>This revolutionary concept has done a great work in providing and maintaining you proper health.</p>
+		</div>
+		<div class="tarkari">
+			<img src="organic.jpg" alt="delicious vegetables"  height="600px" width="500px">
+		</div>
+	</div>
+
+		<div class="tasty">
+			<div class="field">
+				<img src="tasty.jpg" alt="delicious vegetables"  height="600px" width="500px">
+			</div>
+		<div class="soil">
+			<h4>A Tasty Challenge</h4>
+			<p>Food is prepared by the top chiefs of the italy and is conserved in such a way that it maintains its deklicious taste.</p>
+			<p>Delicious and complete meal in a convenient form. Foodmis has taken a tasty challange with itself so that it can provide good tasting food to the customers.</p>
+		</div>
+		
+	</div>
+
+	<div class="background" >
+		<div class="alternative">
+			<h4>Foodismis. An ideal Alternative</h4>
+			<p>While we regularly skip our meal our body is being harmed internally which need to be taken care of which we take care in a delicious way.</p>
+			<p>This revolutionary concept has done a great work in providing and maintaining you proper health.</p>
+		</div>
+		<div class="light">
+			<img src="light.jpg" alt="delicious vegetables"  height="600px" width="500px">
+		</div>
+	</div>
+	<div class="join">
+		<h3>Join the adventure</h3>
+		<p>#Qualityfood</p>
+	</div>
+
+	<div class="date">
+		<p>Stay up to date with our website. And discover the adventure that we are upto with us. Take part in the competions we organize and make sure to send us #Qualityfood posts.</p>
+	</div>
+	<div class="flexwala">
+		
+		<img src="shrimp.jpg" alt="shrimp" width="250px" height="300px;">
+		<img src="wine.jpg" alt="wine meal" width="250px" height="300px;">
+		<img src="makai.jpeg" alt="proper meal" width="250px" height="300px;">
+		<img src="salad.jpg" alt="salad" width="250px" height="300px;">
+		
+	</div>
+	<hr color="#ff9090" style="width:95%">
+	<div class="social">
+		<h4>FOLLOW US AT:</h4>
+	</div>
+	<div class="middle">
+		<a class="btn" href="https://www.facebook.com/HyattRegencyKathmandu/" target="_blank">
+			<img src="facebook.png" height="30px" width="30px">
+		</a>
+		<a class="btn" href="https://twitter.com/hyatt?lang=en" target="_blank">
+			<img src="twitter.png" height="30px" width="30px">
+		</a>
+		<a class="btn" href="https://www.hyatt.com/en-US/hotel/nepal/hyatt-regency-kathmandu/kathm" target="_blank">
+			<img src="google.png" height="30px" width="30px">
+		</a>
+		<a class="btn" href="https://www.instagram.com/grandhyattmumbai/?hl=en" target="-_blank">
+			<img src="instagram.png" height="30px" width="30px">	
+		</a>
+		<a class="btn" href="https://www.youtube.com/channel/UCfEL7DF9whI-cE5DtK4s2Ig" target="_blank">
+			<img src="youtube.png" height="30px" width="30px">
+		</a>
+	</div>
+
+</body>
+</html>
