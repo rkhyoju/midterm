@@ -1,0 +1,287 @@
+
+<html> 
+    <head>
+    </head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="font-awesome.css" rel="stylesheet">
+    <meta class="viewport">
+    <title>Kora Tours</title>
+    <style>
+        body{
+            height: 1000px;
+            font-family: Currior;
+        }
+       
+        header{ 
+            position: sticky;
+            float: right;
+            max-width: 1200px;
+            margin: 20px auto;
+            background-color: #00001;
+            box-shadow: 0 2px 5px rgb;
+            z-index: 1;
+            
+        }
+        nav{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            padding: 10px 100px;
+            box-sizing: border-box;
+            transition: 0.5s;
+            
+        }
+        nav.black{
+            background: rgba()
+;        }
+        .clearfix{ 
+            clear: both;
+        }
+        nav ul{
+            float: right;
+            display: flex;
+            margin: 0;
+            padding: 0;
+            color: blueviolet;
+        }
+        nav ul li{
+            list-style: none;
+            margin-top: 30px;
+        }
+        nav ul li a{
+            display: block;
+            margin: 10px 0;
+            padding: 10px 30px;
+            text-decoration: none;
+            color: whitesmoke;
+            text-transform: uppercase;
+
+        }
+        nav ul li a.active
+        {
+            background: #0D570E;
+            color: #fff;
+            transition: 0.5s;
+            
+        }
+        nav ul li a:hover
+        {
+            background: #0D570E;
+            color: #fff;
+            transition: 0.5s;
+            border-radius: 20px;
+            
+        }
+        @media(max-width:768px){ 
+            .menu-toggle{
+                display: block;
+                height: 20px;
+                width: 20px;
+                margin: 10px;
+                background: #ccc;
+                float: right;
+                cursor: pointer;
+                text-align: center;
+                font-size: 30px;
+                background: #069370;
+                
+            }
+            from {
+    -webkit-transform: rotateY(0deg);
+  }
+  to {
+    -webkit-transform: rotateY(-360deg);
+  }
+}
+
+#stage {
+    margin: 1% auto;
+    -webkit-perspective: 1200px;
+    max-width: 120%;
+    max-height: 120%;
+}
+
+#spinner {
+  -webkit-animation-name: spinner;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 10s;
+  -webkit-transform-style: preserve-3d;
+}
+#spinner:hover {
+  -webkit-animation-play-state: paused;
+}
+
+#spinner img {
+  position: absolute;
+    justify-content: center;
+  border: 1px solid #ccc;
+  background: rgba(255,255,255,0.8);
+  box-shadow: inset 0 0 20px rgba(0,0,0,0.2);
+}
+        <style type="text/css">
+
+  @-webkit-keyframes spinner {
+    from,15% { -webkit-transform: rotateY(0deg);    }
+    20%,35%  { -webkit-transform: rotateY(-72deg);  }
+    40%,55%  { -webkit-transform: rotateY(-144deg); }
+    60%,75%  { -webkit-transform: rotateY(-216deg); }
+    80%,95%  { -webkit-transform: rotateY(-288deg); }
+    to       { -webkit-transform: rotateY(-360deg); }
+  }
+
+  @keyframes spinner {
+    from,15% {
+      -moz-transform: rotateY(0);
+      -ms-transform: rotateY(0);
+      transform: rotateY(0);
+    }
+    20%,35%  {
+      -moz-transform: rotateY(-72deg);
+      -ms-transform: rotateY(-72deg);
+      transform: rotateY(-72deg);
+    }
+    40%,55%  {
+      -moz-transform: rotateY(-144deg);
+      -ms-transform: rotateY(-144deg);
+      transform: rotateY(-144deg);
+    }
+    60%,75%  {
+      -moz-transform: rotateY(-216deg);
+      -ms-transform: rotateY(-216deg);
+      transform: rotateY(-216deg);
+    }
+    80%,95%  {
+      -moz-transform: rotateY(-288deg);
+      -ms-transform: rotateY(-288deg);
+      transform: rotateY(-288deg);
+    }
+    to {
+      -moz-transform: rotateY(-360deg);
+      -ms-transform: rotateY(-360deg);
+      transform: rotateY(-360deg);
+    }
+  }
+  #main{
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  justify-content: center;
+}
+.column{
+  flex-basis: 1 10px;
+  width: calc(100% / 3 - 10px);
+  margin: 5px;
+  padding: 0;
+}
+figure {
+    position: relative; 
+  overflow: hidden;
+  margin: 0;
+    margin-left: 40px;
+  height: 300px;
+  width: 85%;
+  filter: grayscale(.8);
+    z-index:999;
+}
+figure img{
+  width: 100%;
+  height: 100%;
+}
+figure::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    display: block;
+    content: '';
+    width: 0;
+    height: 0;
+    background: rgba(0,0,0,.2);
+    border-radius: 100%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+figure:hover{
+  animation: bloom ease-in-out .75s forwards;
+}
+figure:hover::before {
+    animation: circle .75s;
+}
+@keyframes bloom {
+    0% {
+        filter: grayscale(.8);
+    }
+    40% {
+        filter: grayscale(.5);
+    }
+    100% {
+        filter: grayscale(0);
+    }
+}
+@keyframes circle {
+    0% {
+        opacity: .5;
+    background: rgba(213,156,34,.2);
+    
+    }
+    40% {
+        opacity: 1;
+    background: rgba(213,34,160,.2);
+    }
+    100% {
+        width: 200%;
+        height: 200%;
+        opacity: 0;
+    }
+}
+</style>
+<body> 
+    <header>
+        <nav>
+            <div class="logo"><img src="kora_tours.JPG" style="height: 100px; width=200px; float: left; transition: 0.5s;"></div>
+        <ul>
+            <li ><a href="first_page.html">Home</a> </li>
+            <li><a class="active" href="p2.html">Services</a></li>
+            <li><a href="p3.html">Contact</a></li>
+            <li><a href="about-us.html">About</a></li>
+            </ul>
+        </nav>
+        <div class="clearfix"></div>
+    </header>
+    <div style="background-color: #17470F;height: 100%;" >
+        <br>
+    <br>
+    <br>
+    <br>
+        <br>
+        <br>
+        
+<div id="stage" style="padding-left: 180px; height: 200px;">
+<div id="spinner" style="-webkit-transform-origin: 180px 0 0;margin-left: 30%; margin-top: 10%;height: 500px;">
+<img style="-webkit-transform: rotateY(0deg) translateX(180px); padding: 0 0 0 160px;" src="h1.jpg" width="240" height="200" alt="">
+<img style="-webkit-transform: rotateY(-72deg) translateX(180px); padding: 0 0 0 147px;" src="h2.jpg" width="243" height="200" alt="">
+<img style="-webkit-transform: rotateY(-144deg) translateX(180px); padding: 0 0 0 120px;" src="h3.jpg" width="240" height="200" alt="">
+<img style="-webkit-transform: rotateY(-216deg) translateX(180px); padding: 0 0 0 147px;" src="h4.jpg" width="243" height="200" alt="">
+<img style="-webkit-transform: rotateY(-288deg) translateX(180px); padding: 0 0 0 122px;" src="h5.jpg" width="258" height="200" alt="">
+</div>
+</div>
+        <br>
+        <br>
+        <br>
+    <div id="main">
+      <div class="column">
+            <figure><a href="booking-p.html"><img src="p.jpg" /></a></figure>
+        </div>
+        <div class="column">
+            <figure><a href="booking-k.html"><img src="k.jpg" /></a></figure>
+        </div>
+        <div class="column">
+            <figure><a href="booking-c.html"><img src="c.jpg" /></a></figure>
+        </div>
+</div>
+            </div>
+</body> 
+</html>
