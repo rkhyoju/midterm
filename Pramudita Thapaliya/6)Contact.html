@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Coursework | Contact</title>
+		<link rel="stylesheet" type="text/css" href="CSS/style.css">
+	</head>
+	
+	<body>
+
+	<div>			
+			<nav class="nav-bar">	
+			<div class="web-name">
+	  				 <a class="child" href="1)Home.html"><img src="images/1.png" width="150" height="130" style="padding-top: 25px;"></a>
+			</div>		
+				<a style =" border-style: ridge;line-height:15px; " href="7)BookNow.html">Book Now</a>
+				<a href="6)Contact.html">Contact Us</a>
+				<a href="5)Gallery.html">Gallery</a>
+				<a href="4)Services.html">Services</a>
+				<a href="3)Room.html">Rooms</a>
+				<a href="2)About.html">About Us</a>				
+				<a href="1)Home.html">Home</a>
+			</nav>
+		</div>
+
+		<div>
+			<header>
+				<div class="main-head">
+					<img src="images/50.jpg" width="1519" height="320">
+				</div>
+			</header>
+		</div>
+
+		<div class="title">			
+			<h1 style="font-size: 35px;">Feel free to Contact Us</h1> 
+		</div>
+
+		<div class="bg-image" align="center"></div>
+
+		<div class="form" >
+			<form name="contact-form" onsubmit="validateform()">
+				<h2 align="center">Send Us a Message for<br> Inquiry for Reservation</h2><br>
+				<p><br>
+					<input type="text" name="fullname" placeholder="Enter your name here*" style="border-radius: 4%; width: 99%; height: 4vh">
+				</p><br>
+				<p><br>
+					<input type="E-Mail" name="email" placeholder="Enter your e-mail here*" style="border-radius: 4%; width: 99%; height: 4vh">
+				</p><br>
+				<p><br>
+					<textarea name="message" rows="5" cols="40" placeholder="Enter Message" style="border-radius: 2%;"></textarea>
+				</p><br>
+				<p align="center" style="padding: 5px;"><input type="submit" value="Send"></p><br>
+				<h4 align="center" style="font-size: 10px;"><a href="mailto:Pramudita644@gmail.com" target="_top">Email Address: Info@ImperialHotel.com</a></h4>
+				<h4 align="center" style="font-size: 10px;">Our Location: Gaurighat,Lakeside 6,Pokhara,Nepal</h4>
+				<h4 align="center" style="font-size: 10px;">For Queries: Contact on +977 -61- 465 819 / 465 809</h4>
+			</form>
+		</div>
+		
+		<div>
+			<script>
+				function validateform() {
+					var fullname = document.forms["contact-form"]["fullname"].value;
+					var email = document.forms["contact-form"]["email"].value;
+					var message = document.forms["contact-form"]["message"].value;
+
+					if (fullname == "" || email == ""){
+						alert("Empty Fields! You need to fill in all the given fields.");
+					}
+					else{
+						alert("Inquiry Submitted Successfully!!!                                                         Thank you for your feedback!! We will reach out to you soon..");
+					}
+				}
+			</script>
+		</div>
+
+		<div class="footer">
+			<footer>
+				<br><p align="center" style="color: #fff; font-size: 15px; padding-top: 10px;">Copyright ©2019 All rights reserved | Pramudita Thapaliya<p>
+			</footer>
+		</div>
+
+	</body>
+</html>

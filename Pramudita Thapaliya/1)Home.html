@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Coursework | Home</title>
+		<link rel="stylesheet" type="text/css" href="CSS/style.css">
+		<style>
+			.title h1{
+				font-size: 80px;
+			}
+		</style>
+	</head>
+
+	<body>
+			<div>			
+			<nav class="nav-bar">	
+			<div class="web-name">
+	  				 <a class="child" href="1)Home.html"><img src="images/1.png" width="150" height="130" style="padding-top: 25px;"></a>
+			</div>		
+				<a style =" border-style: ridge;line-height:15px; " href="7)BookNow.html">Book Now</a>
+				<a href="6)Contact.html">Contact Us</a>
+				<a href="5)Gallery.html">Gallery</a>
+				<a href="4)Services.html">Services</a>
+				<a href="3)Room.html">Rooms</a>
+				<a href="2)About.html">About Us</a>				
+				<a href="1)Home.html">Home</a>
+			</nav>
+		</div>
+
+		<div>
+			<header>
+				<div class="main-head">
+					<img src="images/2.jpg" width="1519" height="700">
+				</div>
+			</header>
+		</div>
+<div class="text">
+<h1  align="center" style="font-size:3vw">Come join us for a special experience and everlasting memories.</h1>
+</div>
+<div class="para">
+<p  align="center" style="font-size:1.25vw">Temple Tree Resort & Spa is a boutique hotel combining western standards with the distinctive architecture and culture of Nepal’s Western Himalayas. Named after the fragrant temple tree plant frangipani found here, we offer a peaceful and relaxed atmosphere, privacy when preferred and attentive service. Nestling close by Fewa Lake in the Pokhara Valley, Temple Tree is framed by the foothills and majestic peaks of the Annapurna Mountain Range. The air here is pure and clean, and the sub-tropical climate warm and pleasant.<br><br><br><hr>
+</p>
+<div class="slideshow-container">
+<div class="fade">
+<div class="mySlides fade">
+  &#10077;This hotel has nice grounds, nice bar & dining room. Rooms are spacious & good. Location is excellent - just minutes walk from the lake, shops & restaurants.&#10078;
+  <p class="author">- Roshan M., Boston, Massachusetts</p>
+<img border="0" alt="hi" src="images/3.png" width="80" height="60"></div>
+
+<div class="mySlides fade">
+  &#10077;I love boutique hotels because they have a character and Imperial has it too. Stone cottages arranged around a majestic environment and a swimming pool that is one if the best I have see during my many trips. Delightful little garden with open bar.&#10078;
+  <p class="author">- Bonton, Los Angeles, California</p>
+<img border="0" alt="hi" src="images/3.png" width="80" height="60">
+</div>
+<div class="mySlides fade">
+  &#10077;Lovely hotel, easily up to western standards with friendly and very professional staff. The rooms were spacious and the gardens were beautiful. Highly recommended.&#10078;
+  <p class="author">- Paul, Manchester, United Kingdom</p>
+<img border="0" alt="hi" src="images/3.png" width="80" height="60">
+</div>
+</div>
+</div>
+<div class="dot-container">
+   <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); // Change image every 3 seconds
+}
+</script>
+<br><br><br>
+		<div class="footer">
+			<footer>
+				<br><p align="center" style="color: #fff; font-size: 15px; padding-top: 10px;">Copyright ©2019 All rights reserved | Pramudita Thapaliya<p>
+			</footer>
+		</div>
+
+	</body>
+</html>
