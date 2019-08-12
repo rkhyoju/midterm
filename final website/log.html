@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+input[type=text], input[type=password] {
+  width: 30%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+
+button {
+  background-color: blue;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 12%;
+}
+
+button:hover {
+  opacity: 2;
+  background-color: purple;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: red;
+}
+
+.container {
+  padding: 20px;
+}
+.createacc{
+width: 30%;
+}
+.container {
+  padding: 20px;
+}
+.back{
+width: 30%;
+text-decoration: none;
+font-size: 20px;
+display: block;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+
+</style>
+</head>
+<body>
+
+
+  <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+        
+    <button type="submit">Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+  <div class="container" style="background-color:#f1f1f1">
+  <p>Don't have account yet?  </p>
+  <button type="button" class="createacc"><a href="sign.html">Create Account</a></button>
+  </div>
+</form>
+<div class="container" style="background-color:#f1f1f1">
+  <button type="button" class="back"><a href="e-commerce.html">Back</a></button>
+  </div>
+
+</body>
+</html>

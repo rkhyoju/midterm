@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+
+.bg-img {
+  background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("1.jpg");
+
+  height: 700px;
+width: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  /* Needed to position the navbar */
+  position: relative;
+}
+
+/* Position the navbar container inside the image */
+.container {
+  position: absolute;
+  margin: 20px;
+  width: auto;
+}
+
+/* The navbar */
+.topnav {
+  overflow: hidden;
+}
+
+/* Navbar links */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 16px 18px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn{
+  background-color: white;
+  color: black;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.logo img{
+float: right;
+width: 180px;
+height: auto;
+margin-right: 13px;
+margin-top: 15px;
+}
+
+.title{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+}
+
+.title h1{
+color: white;
+font-size: 96px;
+}
+.log{
+position: absolute;
+margin-left: 60%;
+padding: 16px 18px;
+width: 25%;
+margin-right: 20px;
+margin-down: 10px;
+
+}
+
+.log a{
+color: black;
+
+}
+.log a:hover{
+background-color: green;
+color: black;
+}
+
+.know{
+position:aboslute;
+
+}
+.know a:hover{
+background-color: green;
+color: black;
+
+}
+
+
+
+</style>
+
+
+</head>
+<body>
+
+<div class="bg-img">
+<div class="logo">
+<img src="logo.png">
+  <div class="container">
+<div class="topnav">
+    <div class="dropdown">
+    <button class="dropbtn">Store
+    </button>
+    <div class="dropdown-content">
+      <a href="store.html">MuscleTech</a>
+      <a href="#">Optimum Nutrtion</a>
+      <a href="#">My Protein</a>
+<a href="#">Products Review</a>
+    </div>
+  </div> 
+  <div class="dropdown">
+    <button class="dropbtn">Workouts
+    </button>
+    <div class="dropdown-content">
+      <a href="muscle.html">Muscles Building</a>
+      <a href="#">Fat Loss</a>
+      <a href="#">Strength</a>
+	<a href="#">beginner</a>
+<a href="#">Intermediate</a>
+<a href="#">Cardio</a>
+    </div>
+  </div> 
+  <div class="dropdown">
+    <button class="dropbtn">Diet Plans
+    </button>
+    <div class="dropdown-content">
+      <a href="clean.html">Clean Eating</a>
+      <a href="#">Flexible dieting</a>
+      <a href="#">Keto & Low Carbs</a>
+<a href="#">Carb Cycling</a>
+<a href="#">Gluten Free</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">Articles
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Muscle Building</a>
+      <a href="#">Training Tips</a>
+      <a href="#">Nutrition</a>
+<a href="#">Sports</a>
+<a href="#">Motivation</a>
+<a href="#">Recovery</a>
+<a href="#">Supplements</a>
+    </div>
+  </div>
+ <div class="dropdown">
+    <button class="dropbtn">Videos
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Workouts</a>
+      <a href="#">Nutrition</a>
+      <a href="#">Motivation</a>
+<a href="#">Fitness Lifestyle</a>
+<a href="#">Fitness Tips</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">Tools
+    </button>
+    <div class="dropdown-content">
+      <a href="#">BodyFat Calculator</a>
+      <a href="#">Diet Planner</a>
+      <a href="#">IBM calculator</a>
+    </div>
+  </div>
+
+  </div>
+</div>
+
+<div class="title">
+<h1> Fitness Factory!</h1>
+</div>
+<div class="log">
+<button class="log"><a href="log.html">Log in</a></button>
+</div>
+
+<div class="know">
+<button class="know"><a href="know.html">Click here to know more about FF.</a></button>
+</div>
+
+
+
+
+
+
+
+</body>
+</html>
