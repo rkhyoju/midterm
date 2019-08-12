@@ -1,0 +1,125 @@
+@font-face {
+	{
+		font-family: Cymo (TrueType);
+		src: url(../fonts/CymoCounter.ttf);
+	}
+}
+body
+{
+	margin:0px;
+	padding:0px;
+	font-family:ariel;
+	background:url("../images/background.jpg");
+	background-attachment:fixed;
+}
+nav
+{
+	margin-top:10px;
+	border: 1px solid red;
+}
+.navul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+
+}
+
+.navli {
+    float:left;
+	font-size:30px;
+	letter-spacing: 5px;
+}
+
+.navli a {
+    display:block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.navli a:hover {
+    background-color: #111;
+}
+footer
+{
+	text-align:center;
+	color:#ffffff;
+	background-color:#333;
+	border:1px solid red;
+	width:100%;
+	height:100px;
+	padding-bottom:0px auto;
+	margin-bottom:0px auto;
+	margin-top:10px;
+}
+.wrapper
+{
+	margin:0px auto;
+	padding:0px auto;
+	margin-top:10px;
+	width:1400px;
+
+}
+.images
+{
+	padding:0px;
+	width:100%;
+	height:auto;
+}
+.textarea
+{
+	color:#ffffff;
+	margin:40px;
+	text-align:justify;
+}
+.textheading
+{
+	color:#ffffff;
+	padding:5px;
+	text-align:center;
+}
+.matches
+{
+	margin-top:10px;
+	width:780px;height:110px;
+	border:1px solid red;
+	background-color:#000000;
+	padding:10px;
+	font-size:30px;
+color:#ffffff;
+}
+.links
+{
+	text-decoration: none;
+}
+a:link{
+	color:white;
+}
+a:visited
+{
+	color:white;
+}
+a:hover
+{
+	color:red;
+}
+a:active
+{
+	color:red;
+}
+
+.button
+{
+    background-color: #555555;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
