@@ -1,0 +1,261 @@
+<html>
+<head>
+	<title> Home </title>
+    <link rel="stylesheet" type="text/css" href="draft-style.css">
+    <link rel="shortcut icon" href="small-logo.png" />
+  <script type="text/javascript">
+function validate(){
+if(document.myForm.fname.value == ""){
+  document.myForm.fname.focus();
+  alert("please fill Name");
+  return false;
+}
+    if(document.myForm.lname.value == ""){
+  document.myFormm.lname.focus();
+  alert("please fill Name");
+  return false;
+}
+if(document.myForm.Email.value == ""){
+  document.myForm.Email.focus();
+  alert("please fill Email");
+  return false;
+}
+if(document.myForm.Email.value != ""){
+  var emailID = document.myForm.Email.value;
+  atpos = emailID.indexOf("@");
+  dotpos = emailID.lastIndexOf(".");
+  if( atpos < 1 || (dotpos - atpos < 2)){
+  alert("Please enter a valid email address");
+  document.myForm.email.focus();
+  return false;
+  }
+if(document.myForm.COUNTRY.value == "-1"){
+  document.myForm.COUNTRY.focus();
+  alert("please select country");
+  return false;
+}
+if(document.myForm.mobile.value== ""||document.myForm.value.length!=10){
+  alert("Enter Valid Mob.No");
+  document.myForm.mobile.focus();
+  return false; 
+}
+}
+return true;
+}
+
+</script>
+
+</head>
+	<style>
+         body{
+    margin: 0;
+    padding: 0;
+    background-image: url(HOME.jpg);
+    background-size: 100% 110%;
+    background-attachment: fixed;
+        }
+       
+
+        .logo img
+        {
+        	width: 150px;
+        	height:auto;
+        	float:left;
+
+        }
+         
+         .loginbox
+         {
+          width:360px;
+          height:450px;
+          position:absolute;
+          background:white;
+          color:#fff;
+          margin-top:130px;
+          margin-left:150px;
+          padding:70px 30px;
+         }
+
+         .loginbox img 
+         {
+          width:180px;
+          height:100px;
+          border-radius:50%;
+          position:absolute;
+          top:-50px;
+          left:120px;
+
+         }
+
+         .loginbox h2
+         {
+          margin:0;
+          padding:0;
+          font-size:20px;
+          text-align:center;
+          padding-bottom:10px;
+        color: black;
+         }
+
+         .loginbox p
+         {
+          margin:0;
+          padding:0;
+          font-weight: bold;
+             color:black;
+         }
+
+         .loginbox input
+         {
+          width:100%;
+          margin-bottom:20px;
+         }
+
+         .loginbox input[type="text"], input[type="password"]
+         {
+          border:none;
+          border-bottom:1px solid #fff;
+          background:transparent;
+          outline:none;
+          height:40px;
+          color:black;
+          font-size:16px;
+         }
+
+         .loginbox input[type="number"], input[type="mobile"]
+         {
+          border:none;
+          border-bottom:1px solid #fff;
+          background:transparent;
+          outline:none;
+          height:40px;
+          color:#fff;
+          font-size:16px;
+         }
+
+         .loginbox input[type="submit"]
+         {
+          border:none;
+          outline:none;
+          background:#053742;
+          color:#fff;
+          font-size:18px;
+          height:40px;
+          border-radius:20px;
+        }
+
+         .loginbox input[type="submit"]:hover
+         {
+          background: yellow;
+          cursor:pointer;
+          color:#000;
+         }
+
+         .loginbox select
+         {
+          width:100%;
+          margin-bottom:20px;
+          border:none;
+          border-bottom:1px solid #fff;
+          background:transparent;
+          outline:none;
+          height:40px;
+          color:black;
+          font-size:16px;
+         }
+
+         .loginbox option
+         {
+          color:black;
+          font-size:16px;
+         }
+
+           .footer
+         {
+          width:100%;
+          background:black;
+          height:50px;
+          position:absolute;
+          display:block;
+          margin-top:820px;
+
+         }
+
+         .footer p
+         {
+          color:white;
+          position:absolute;
+          display:block;
+          font-size:20px;
+          margin-left:570px;
+         }
+
+
+
+
+      
+
+      
+
+
+    </style>
+
+<body>
+  <header>
+        <nav>
+        <ul>
+            
+        <li><a href="HOME.html">HOME</a></li>
+          <li><a href="CONTACT.html">CONTACT</a></li>
+            <li><a href="GALLERY.html">GALLERY</a></li>
+          
+
+            <li><a href="SHELDON.html">SHELDON</a></li>
+            <li><a href="LEONARD.html">LEONARD</a></li>
+            <li><a href="PENNY.html">PENNY</a></li>
+            <li><a href="HOWARD.html">HOWARD</a></li>
+              <li><a href="AMY.html">AMY</a></li>
+              <li><a href="RAJ.html">RAJ</a></li>
+            <li><a href="BERNADETTE.html">BERNADETTE</a></li>
+        </ul>
+    </nav>
+
+       <div class="loginbox">
+        <img src="small-logo2.png">
+           <h2> Send Us A Message</h2>
+             <form name="myForm" onsubmit="return(validate())">
+              <p>First Name*</p>
+           <input type="text" name="fname" placeholder="Enter your first name" />
+                 <p>Last Name*</p>
+            <input type="text" name="lname" placeholder="Enter your last name" />
+        
+            <p>Email*</p>
+           <input type="text" name="Email" placeholder="Enter your email address" />
+ 
+           <p>Phone no*</p>
+           <input type="number" name="mobile" placeholder="Enter your phone number" />
+            
+            <p> COUNTRY*</p>
+              <select name="COUNTRY">
+                <option disabled="disabled" selected="selected"value="-1">Pick your choice</option>
+               <option value="1">Nepal</option>
+                <option value="2">Australia</option>
+               <option value="3">USA</option>
+                   <option value="4">Africa</option>
+                <option> None of the above </option>
+            </select>
+            <br></br>
+            <input type="submit" value="submit"/>
+
+
+
+           
+       </div>
+
+  </header>
+
+
+
+
+</body>
+</html>
