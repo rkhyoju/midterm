@@ -1,0 +1,40 @@
+﻿nav {
+    background-color: linen;
+    box-shadow: rgba(0,0,0,.20) 0 2px 2px;
+}
+
+.nav {
+    margin-left: 15%;
+    margin-right: 15%;
+    display: flex;
+}
+
+.nav span {
+    display: block;
+    padding: 4% 14% 1.5% 2%;
+}
+
+.nav span a {
+    text-decoration: none;
+    color: #444344;
+    font-family: sans-serif;
+}
+
+#responsive {
+    padding: 4% 0 0 24%;
+}
+
+@media only screen and (max-width: 500px) {
+    .nav {
+        margin: 0;
+    }
+
+    .nav span {
+    display: block;
+    padding: 2% 7% 0 2.5%;
+    }
+
+    #responsive {
+        padding: 2% 7% 0 2.5%;
+    }
+}

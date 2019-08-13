@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Support</title>
+        <link rel="stylesheet" type="text/css" href="nav.css">
+        <link rel="stylesheet" type="text/css" href="support.css">
+        <link rel="icon" href="Images/dsn-icon.png">
+    </head>
+    <body>
+        <header style="background-color: linen">
+                <img src="Images/dsn.png" alt="Digital Store Nepal" width="10%" style="margin: 1% 0 0 44%;">
+            <nav>
+                <div class="nav">
+                    <span><a href="game.html">Games</a></span>
+                    <span><a href="game.html#bottom">Gift Cards</a></span>
+                    <span><a href="checkout.html">Checkout</a></span>
+                    <span id="responsive"><a href="#support">Support</a></span>
+                </div>
+            </nav>
+            <div class="activeline"></div> 
+        </header>
+
+        <div class="contact">
+            <img src="Images/csd.png" alt="Support Team">
+            <h1 id="replace1">Customer Support</h1>
+            <p id="replace2">
+                Are you new here and need some help to use the website or do you have other question? Just contact our 
+                customer service by filling out this form and we'll get back to you as soon as possible! We try to 
+                answer all queries  within 24 hours. However, During unprecedented conditions, you can expect a reply
+                within 48 hours. We are happy to help you!
+            </p>
+            </div>
+
+        <div class="contactform">
+            <h2>Contact Form</h2>
+            <input id="getinfo" type="text" placeholder="Your Name...">
+            <input type="text" placeholder="Your Email...">
+            <input type="text" placeholder="Message..." style="padding-bottom: 8%;">
+            <button onclick="message()">Submit</button>
+        </div>
+
+        <script>
+            function message(){
+                var x=document.getElementById("getinfo").value;
+                document.getElementById("replace1").innerHTML="Hello "+ x +"!";
+                document.getElementById("replace2").innerHTML="Thank you for Contacting Us. We usually reply to all our E-mails within 24 hours. However, it might even take 48 hours during some unprecedented cases.";
+
+            }
+        </script>
+
+        <footer>
+            <hr>
+            <p><strong>Sanjeev Thapa</strong> &copy; 2019 All Rights Reserved</p>
+        </footer>
+        </body>
+</html>

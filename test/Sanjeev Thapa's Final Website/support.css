@@ -1,0 +1,108 @@
+﻿*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.activeline {
+    height: 4px;
+    width: 81px;
+    background-color: #278ae2;
+    margin-left: 78.65%;
+}
+
+.contact img{
+    margin-left: 15%;
+    margin-top: 2%;
+    width:70.5%;
+}
+
+.contact h1{
+    text-align: center;
+    margin: 1% 21.5% 0% 19%;
+    color: #278ae2;
+    font-family: sans-serif;
+}
+
+.contact p{
+    color: #444344;
+    margin-top: 1%;
+    margin-left: 19%;
+    margin-right: 20.5%;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.contactform h2 {
+    text-align: center;
+    margin: 1% 21.5% 0% 19%;
+    color: #278ae2;
+    font-family: sans-serif;
+    font-size: 185%;
+}
+
+.contactform input{
+    padding: 1% 0 1% 1%;
+    width: 30%;
+    margin: 1% 0 0 35%;
+    font-size: 105%;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.contactform button {
+    padding: 0.5% 1%;
+    display: block;
+    font-size: 100%;
+    background-color: #fb7f18;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin: 1% auto 0 auto;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.contactform button:hover {
+    background-color: #278ae2;
+}
+
+footer {
+    margin-top: 2%;
+    text-align: center;
+    background-color: #f2f2f2;
+}
+
+footer p{
+    padding: 1%;
+    font-family: Arial;
+    color: #606975;
+}
+
+@media only screen and (max-width: 500px) {
+    .activeline {
+        margin-left: 67%;
+    }
+
+    .contact img {
+        margin: 3% 0 1% 0;
+        width: 100%;
+    }
+
+    .contact p {
+        color: #444344;
+        margin: 2% 0;
+    }
+
+    .contactform{
+        margin: 5% 0;
+    }
+
+    .contactform input {
+        padding: 2% 0 2% 2%;
+        width: 70%;
+        margin: 2% 0 0 15%;
+
+    }
+
+}

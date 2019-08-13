@@ -1,0 +1,107 @@
+﻿*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.activeline {
+    height: 4px;
+    width: 77px;
+    background-color: #278ae2;
+    margin-left: 15.5%;
+}
+
+.head {
+    margin: 3% 0 0 16.3%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: #292729;
+    text-decoration: underline;
+}
+
+.game-products {
+    margin: 2% 15% 0 16.3%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 5%;
+}
+
+.game-products a{
+    text-decoration: none;
+    color: black;
+}
+
+.game-products1 {
+    display: flex;
+    margin-bottom: 10%;
+    transition: 0.3s;
+}
+
+.game-products1:hover {
+    transform: scale(1.2);
+    box-shadow: rgb(0, 0, 0) 0 0 5px;
+    background-color: linen;
+    cursor: pointer;
+}
+
+.description{
+    font-family: sans-serif;
+    margin: auto;
+
+}
+
+.description ul {
+    margin-top: 10%;
+    color: #444344;
+    font-weight: lighter;
+}
+
+.description ul li {
+    list-style: none;
+}
+
+.description p {
+    margin-top: 10%;
+    font-weight: bolder;
+    color: #ea1e1f;
+}
+
+.cross{
+    text-decoration: line-through;
+    font-weight: 100;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.top{
+    margin: -10% 0 0 92%;
+}
+
+footer {
+    margin-top: 3%;
+    text-align: center;
+    background-color: #f2f2f2;
+}
+
+footer p {
+    padding: 1%;
+    font-family: Arial;
+    color: #606975;
+}
+
+@media only screen and (max-width: 500px) {
+    .head {
+        margin: 6% 0 6% 16.3%;
+    }
+
+    .game-products {
+        grid-template-columns: auto;
+        grid-gap: 0;
+    }
+
+    .activeline {
+        margin-left: 0;
+    }
+}

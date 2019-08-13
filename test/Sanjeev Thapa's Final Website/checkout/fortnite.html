@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Checkout</title>
+    <link rel="stylesheet" type="text/css" href="../nav.css">
+    <link rel="stylesheet" type="text/css" href="checkout.css">
+    <script src="game.js"></script>
+    <link rel="icon" href="../Images/dsn-icon.png">
+</head>
+<body>
+    <header style="background-color: linen">
+        <a href="#game.html">
+            <img src="../Images/dsn.png" alt="Digital Store Nepal" width="10%" style="margin: 1% 0 0 44%;">
+        </a>
+        <nav>
+            <div class="nav" id="top">
+                <span><a href="../game.html">Games</a></span>
+                <span><a href="../game.html#bottom">Gift Cards</a></span>
+                <span><a href="#checkout">Checkout</a></span>
+                <span style="padding: 4% 0 0 24%;"><a href="../support.html">Support</a></span>
+            </div>
+        </nav>
+        <div class="activeline"></div>
+    </header>
+
+    <div class="flex">
+        <div class="checkout">
+            <h2>Billing Address</h2>
+            <div class="top">
+                <div class="name1">
+                    <p>First Name</p>
+                    <input type="text" placeholder="Sanjeev">
+                </div>
+                <div class="name2">
+                    <p>Last Name</p>
+                    <input type="text" placeholder="Thapa">
+                </div>
+            </div>
+
+            <div class="middle">
+                <p>Email</p>
+                <input type="email" placeholder="name@email.com">
+            </div>
+
+            <div class="normal">
+                <p>Address</p>
+                <input type="text" placeholder="Thapathali">
+            </div>
+            <div class="bottom">
+                <div class="name1">
+                    <p>State</p>
+                    <select style="margin: 1.5% 0 0 0;">
+                        <option >Choose...</option>
+                        <option>State 1</option>
+                        <option>State 2</option>
+                        <option>State 3</option>
+                        <option>State 4</option>
+                        <option>State 5</option>
+                    </select>
+                </div>
+                <div class="name2">
+                    <p>Zip</p>
+                    <input style="padding: 2% 0 2% 2%;" type="number">
+                </div>
+            </div>
+            <hr>
+
+            <h2>Payment</h2>
+
+            <div class="payment">
+                <div class="payment1">
+                    <input type="radio" name="radio">
+                    <p>E-Sewa</p>
+                </div>
+
+                <div class="payment1">
+                    <input type="radio" name="radio">
+                    <p>Khalti</p>
+                </div>
+
+                <div class="payment1">
+                    <input type="radio" name="radio">
+                    <p>IME Pay</p>
+                </div>
+            </div>
+
+            <hr>
+
+            <button onclick="message()">Purchase The Product</button>
+        </div>
+
+        <div class="cart">
+            <h2>Cart</h2>
+            <div class="flex">            
+            <p style="font-size: 180%; margin:auto 0;">Product:</p> 
+            <img style="margin:0 0 0 8%;" src="../Images/fortnite.png" width="100px">
+            </div>
+            <p>Product Name: FORTNITE</p>
+
+            <input type="text" placeholder="Character Name">
+            <input type="number" placeholder="Character ID">
+
+            <select id="list" onchange="calculate()">
+                <option value="a">Select vbucks Here</option>
+                <option value="b">1000 vbucks</option>
+                <option value="c">2800 vbucks</option>
+                <option value="d">5000 vbucks</option>
+                <option value="e">13500 vbucks</option>
+            </select>
+
+            <div class="flex">
+                <p>Price:</p>
+                <p id="price" style="margin:5% 0 0 44.25%;">Rs.0</p>
+            </div>
+
+            <div class="flex">
+                <p>VAT:</p>
+                <p id="vat" style="margin:5% 0 0 49.3%;">Rs.0</p>
+            </div>
+
+            <hr>
+
+            <div class="flex">
+                <p>Total Price:</p>
+                <p id="total_price" style="margin:5% 0 0 24%;">Rs.0</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+            <hr>
+            <p><strong>Sanjeev Thapa</strong> &copy; 2019 All Rights Reserved</p>
+        </footer>
+    </body>
+    </html>
