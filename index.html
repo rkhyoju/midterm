@@ -1,149 +1,405 @@
+<!DOCTYPE html>
 <html>
-<html lang="en">
-<head>
-<title>Esports</title><meta charset="UTF-8">
-<meta name="viewport" content="width-device-width, initial-scale=1.0">
-<meta name="author" content="Simran Regmi">
-<style>
-img.sticky {
-position: -webkit-sticky;
-position: sticky;
-top: 0px;
-width: 236px;
-
-
+  <head>
+    <meta name="viewport" content="width-device-width, initial-scale">
+    <title>Blogger Paras Subedi</title>
+  </head>
+  <style>
+*{
+  margin: 0;
+  padding: 0;
+}
+html{
+  font-size: 16px;
+}
+body{
+  font-size: 0.875em;
+  font-family: Arial,sans-serif;
+  background-color: #dcffdc;
+}
+h1,h2,h3,h4,h5{
+  font-family: Arial,sans-serif;
+  font-weight: 400;
+}
+h2{
+  font-size: 2em;
+  margin-buttom: 20px;
+  color: #58b458;
+}
+p{
+  line-height: 1.7em;
+}
+.clear-flix{
+  display: block;
+  content:"";
+  visibility: hidden;
+  overflow: hidden;
+  width: 0;
+  height: 0;
+  font-size: 0;
+  line-height: 0;
+  clear: both;
+}
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.buttom{
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000;
+  font-family: Arial,sans-serif;
+  font-size: 0.875em;
+  padding: 8px 11px;
+  border-radius: 10px;
+  background-color: #e2f202;
+}
+.buttom:hover{
+  background-color: #000;
+  color: #e2f202;
 }
 
-a{
-	
-	text-decoration:none;
+nav{
+  padding: 13px;
+  position: fixed;
+  z-index: 10000;
+  top: 40;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0,0,0,0.6);
+  text-align: center;
+  -webkit-transition: -webkit-transform 0.4s ease;
+  -moz-transition: -moz-transition 0.4s ease;
+  transition: transform 0.4s ease;
+}
+nav ul li{
+  display: inline-block;
+  maargin-rignt:15px;
+
+}
+nav ul li:last-child{
+  margin-right: 0;
+}
+nav ul li a{
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.875em;
+  color: #fff;
+  font-family: Arial,sans-serif;
+}
+.intro{
+  background-color: :#000 url('images/intro-bg.jpg') no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 50% 50%;
+  padding-top: 150px;
+  padding-buttom:120px;
+  text-align: center;
+}
+.intro-heading{
+  display: inline-block;
+  text-align: left;
+  margin-bottom: 100px;
+}
+.intro-headings h1{
+  font-size: 1.9em;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.intro-headings h4{
+  color: #aeaeae;
+  text-transform: uppercase;
+  font-family: Arial,sans-serif;
+  font-weight: 300;
+  font-size: 0.8em;
+  letter-spacing: 0.2em;
+}
+.intro .continue-btm{
+  display: block;
+  width: 100px;
+  margin: 0 auto;
+  background: url('images/aaa.png')no-repeat;
+  background-size: 45px 25px;
+  background-position: 50% 100%;
+  padding-buttom: 40px;
+  font-size: 1.125em;
+  text-decoration: none;
+  color: #e2f202;
+}
+.about{
+  background-color: #58b458;
+  padding-buttom: 70px;
+}
+.about h2{
+  color: #fff;
+}
+.about p{
+  color: #e0e0e0;
+}
+.gallery-list{
+  list-style: none;
+  text-align: center;
+.gallery p{
+  color:#6e6e6e;
+  font-size: 0.875em;
 }
 
-</style>
-</head>s
-<body background="images/t.jpg" text="Grey">
 
-<center><img src="images/z.png" alt="logo" width="200px" /></center>
-<a href="https://www.steampowered.com"><img src="images/n.jpg" alt="logo" width="150px" align="right"/></a>
-<a href="https://www.twitch.tv/"><img src="images/k.jpg" alt="logo" width="150px" align="left"/></a>
-<center><font face="algerian"size= "5" color="White"><h1><a href="https://www.esports.com">Welcome To Esports.</a>
-</center></font></h1><hr>
-<div style="background-color:white"><center><pre><h1><a href="http://www.gamingcs11.blogspot.com">Home</a><a href="about.html">   About  </a>    <a href="#Contact">Contact</a></center></h1></pre></div>
-<table align="left" >
-<tr>
-<img class="sticky" src="images/f.jpg" align="left">
-</tr>
-</table>
-<table align="right" >
-<tr>
-<img class="sticky" src="images/f.jpg" align="right">
-</tr>
-</table>
-<div id="container" style="width:1140px; border:2px solid #ccddee;min-height:500px; margin:auto auto; ">
-<font face="Algerian" size="6" color="Maroon"><center>Streaming Live On Twitch!!</center></font>
-<p allign="justify">
-<blockquote><blockquote><blockquote><blockquote>
- eSports describes the world of competitive, organized video gaming. Competitors from different leagues or teams face off in t
- e same games that are popular with at-home gamers: Fortnite, League of Legends, Counter-Strike, Call of Duty, Overwatch and Madden NF
-  L, to name a few. These gamers are watched and followed by millions of fans all over the world, who attend live events or
- tune in on TV or onli
- ne. Streaming services like Twitch allow viewers to watch as their favorite gamers play in real time, 
- and this is typically where popular gamers build up their fandoms.
- eSports describes the world of competitive, organized video gaming. 
- Competitors from different leagues or teams face off in the same games 
- that are popular with at-home gamers: Fortnite, League of Legends, Counter
- -Strike, Call of Duty, Overwatch and Madden NFL, to name a few. These gamers are wat
-ched and followed by millions of fans all over the world, who attend live events or tune in on T
- ime, and this is typically where popular gamers build up their fandoms.eSports describes the world of competitiv
- </p></blockquote></blockquote></blockquote>
- <hr color="#000080" size="4px" width="90%"
- allign="center" noshade/>
- <p><blockquote>
- eSports describes the world of competitive, organized video gaming. Competitors from different leagues or teams face off in the same 
- games that are popular with at-home gamers: <strike>Fortnite, League of Legends, Counter-Strike, Call of Duty, Overwatch and Madden NFL, to 
- name a few</strike>. These gamers are watched and followed by millions of fans all over the world, who attend live events or tune in on TV o
- r online. Streaming services like Twitch allow viewers to watch as their favorite gamers play in real time, and this is typically where p
- opular gamers build up their fandoms.eSports describes the world of competitive, organized video gaming. Competitors from 
- different leagues or teams face off in the same games that are popular with at-home gamers: Fortnite, League of Legends, 
- Counter-Strike, Call of Duty, Overwatch and Madden NFL, to name a few. These gamers are watched and followed by millions of 
- fans all over the world, who attend live events or tune in on TV or online. Streaming services like Twitch allow viewers to watch as their 
- favorite gamers play in real time, and this is typically where popular gamers build up their fandoms.eSports describes the world of competitive, organized video gaming. Competitors from different leagues or teams face off in the same games that are popular with at-home gamers: Fortnite, League of Legends, Counter-Strike, Call of Duty, Overwatch and Madden NFL, to name a few. These gamers are watched and followed by millions of fans all over the world, who attend live events or tune in on TV or online. Streaming services like Twitch allow viewers to watch as their favorite gamers play in real time, and this is typically where popular gamers build up their fandoms.eSports describes the world of competitive, organized video gaming. Competitors from different leagues or teams face off in the same games that are popular with at-home gamers: Fortnite, League of Legends, Counter-Strike, Call of Duty, Overwatch and Madden NFL, to name a few. These gamers are watched and followed by millions of fans all over the world, who attend live events or tune in on TV or online. Streaming services like Twitch allow viewers to watch as their favorite gamers play in real time, and this is typically where popular gamers build up their fandoms.
- eSports describes the world of competitive, organized video gaming. Competitors from different leagues or teams face off in the sam
- e games that are popular with at-home gamers: Fortnite, League of Legends, Counter-Strike, Call of Duty, Overwatch and Madden NFL, to
- name a few. These gamers are watched and followed by millions of fans all over the world, who attend live events or tune in on TV or online. Streaming services like Twitch allow viewers to watch as their favorite gamers play in real time, and this is typically where popular gamers build up their fandoms.
- eSports describes the world of competitive, organized video gaming. Competitors from different leagues or teams face off in the s
- ame games that are popular with at-home gamers: Fortnite, League of Legends, Counter-Strike, Call of Duty, Overwatch and Madden NFL, to
- name a few. These gamers are watched and followed by millions of fans all over the world, who attend live events or tune in on TV or online. Streaming services like Twitch allow viewers to watch as their favorite gamers play in real time, and this is typically where popular gamers build up their fandoms.
- hat are popular with at-home gamers: Fortnite, League of Legends, Counter-Strike, Call of Duty, Overwatch and Madden NFL, to name 
- a few. These gamers are watched and followed by millions of fans all over the world, who attend live events or tune in on TV or online. Streaming services like Twitch allow viewers to watch as their favorite gamers play in real time, and this is typically where popular gamers build up their fandoms.
- </p></blockquote>
- <hr color="#008080" size="4px" width="95%"
- allign="center" noshade/>
- <font face="Algerian" size="9" color="Pink"><center>
-Esports Prizepool.</center></font>
- <pre>
-	SN 	Name		Prizepool	
-	1.	DOTA		30,000,000$
-	2.	CsGO		20,000,000$
-	3. 	PUBG		25,000,000$			
-	4. 	FORTNITE	100,000,000$
-</pre>
-<hr color="#C0C0C0" size="4px" width="95%"
- allign="center" noshade/>
-<ol> Teams Qualified
-<ul>
-<li>Liquid</li>
-<li>Cloud 9</li>
-<li>Fnatic</li>
-</ul>
-</ol>
-<hr color="#800000" size="4px" width="95%"
- allign="center" noshade/>
- <ul>Playoffs Teams
- <ol type="i" start="1">
- <li>Alliance</li>
- <li>Astrails</li>
- <li>G2 esports</li>
- </ul>
- <ul>Eliminated Teams
- <ul type="square">
- <li>Envyus</li>
- <li>NAVI</li>
- <li>Faze</li>
- </ul>
- <ul><br>
- MVP
- <ol type="A" start="1">
- <li>Device
- <ul type="square">
- <li>Team Astrails</li>
- <ul type="circle">
- <li>Winners of ESL Colounge</li>
- </ul>
- </li>
- </ul>
- </li>
- <li>Guardian
- <ul type="circle">
- <li>Faze Clan</li>
- <ul type="square">
- <li>1st Runner Up</li>
- </ul>
- </li>
- </ul>
- </li>
- <li>KennyS
- <ul type="square">
- <li>G2 esports</li>
- <ul type="circle">
- <li>2nd Runner Up</li>
- </ul>
- </li>
- </ul>
- </li>
-<center><img src="images/n.png" width="750" height="500"></center>
-<a name="contact"><h1>Contact me at : <a href="tel:9861384144">  9861384144</a></h1>
-<pre><a href="https://www.facebook.com"><img src="images/e.png" alt="logo" width="30px" /></a>      <a href="https://www.instagram.com"><img src="images/s.png" alt="logo" width="30px" /></a></pre>
-</div>
-</body>
+  </style>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#" data-scroll-target=".about">About</a></li>
+        <li><a href="#" data-scroll-target=".skills">skills</a></li>
+        <li><a href="#" data-scroll-target=".recent-projects">Recent Projects</a></li>
+        <li><a href="#" data-scroll-target=".contact">Contact me</a></li>
+      </ul>
+    </nav>            <!----END OF NAVBAR---->
+
+    <div class="intro">
+        <div class="container">
+          <div class="intro-heading">
+              <h1>Paras Subedi</h1>
+              <h4>Blogger</h4>
+            </div> <!--End of intro heading---->
+            <a href="#" class="continue-btn" data-scroll-target=".about">Continue</a>
+        </div> <!--End of container-->
+    </div> <!---End of intro--->
+
+    <div class="about">
+        <div class="container-sm">
+
+            <h2>About.</h2>
+            <p>Hello everyone i am Paras Subedi.I am blogger and i am studying BSC(Hons.)in British collage.
+              Hello everyone i am Paras Subedi.I am blogger and i am studying BSC(Hons.)in British collage.
+              Hello everyone i am Paras Subedi.I am blogger and i am studying BSC(Hons.)in British collage.
+            </p>
+        </div><!---End of container small-->
+    </div> <!--End of about-->
+
+    <div class="skills">
+          <div class="container-sm">
+              <h2>Skills.</h2>
+          </div>
+          <div class="skills-list-bg">
+             <ul class ="skills-list container"></ul>
+                    <li class="skill photogr">
+                      <h5>Photography</h5>
+                      <p>Photography is my hobby which is used while creating websites,blogging and other propose.
+                      Photography is my hobby which is used while creating websites,blogging and other propose.
+                      Photography is my hobby which is used while creating websites,blogging and other propose.
+                    </p>
+                          <spam class="skill-divider"></spam>
+                    </li>
+                    <li class="skill illustr">
+                      <h5>Illustration</h5>
+                      <p>An Illustration is a decoration,interpretation or visual explanation of text,concept or process,
+                        design for integration onloadeddata="in publishedmedia,such as poster,flyers,ect which i love"</p>
+                          <spam class="skill-divider"></spam>
+                    </li>
+                    <li class="skill edit">
+                      <h5>Editing</h5>
+                      <p>Editing is the process of selecting and preparing writing,Photography,visual,audible and fliming
+                       media used to convey information and i loved it and used in business process too.</p>
+                          <spam class="skill-divider"></spam>
+                    </li><!--- end of contact mail class-->
+                <!--end of contact list/container-->
+          </div>  <!---end of container smaill-->
+    </div> <!----end of contact-->
+
+    <div class="recent projects">
+        <div class="container-sm">
+          <h2>Recent project</h2>
+        </div>
+        <div class="recent-project-list-bg">
+              <ul class="recent-project-list container">
+                    <li class="project wedding">
+                          <div class="project-visible-content">
+                                <div class="container-sm">
+                                      <h3>Mayand wedding</h3>
+                                      <div class="project-text-wapper">
+                                          <blockquote>
+                                                <i>There are many business run through wedding.Well,wedding bring families and
+                                                  friends together to celebrate life time.Business plan like inteirer designing
+                                                  designing in party food are arranged by our team.
+                                                </i>
+                                          </blockquote>
+                                          <div class="quote-author-info">
+                                                <p class="quote-author">Marry Maynand</p>
+                                                <p class="quote-author-pos">Bride</p>
+                                          </div>
+                                      </div>
+                                    </div>
+                                      <a href="#" class="buttom project-extra-toggle">More</a>
+                                </div>
+                          </div>
+                        </div>
+                      </li>
+                          <div class="project-extra">
+                              <ul class="project-extra-images">
+                                  <li><img src="images/project-extra-1.jpg"></li>
+                                  <li><img src="images/p2.jpg"></li>
+                                  <li><img src="images/p3.jpeg"></li>
+                                  <li><img src="images/p4.jpg"></li>
+                                  <li><img src="images/p5.jpg"></li>
+                                  <li><img src="images/p6.jpg"></li>
+                                </ul>
+
+                                <ul class="project-extra-info">
+                                        <li>
+                                            <i class="fas fa-camera"></i>
+                                            <p class="label">Photos Taken:<br><spam class="label-descr">203 Photos</spam></p>
+                                        </li>
+                                        <li>
+                                            <i class="fal fa-clock"></i>
+                                            <p class="label">Time Spend:<br><spam class="label-descr">18 hours</spam></p>
+                                        </li>
+                                        <li>
+                                            <i class="fal fa-globe"></i>
+                                            <p class="label">Location:<br><spam class="label-descr">Kapan,Kathmandu,Nepal</spam></p>
+                                        </li>
+                                      </ul>
+                               </div>
+                    </li>
+                    <li class="project wedding">
+                          <div class="project-visible-content">
+                                <div class="container-sm">
+                                      <h3>Linda's photoshot</h3>
+                                      <div class="project-text-wapper">
+                                          <blockquote>
+                                                <i>I love photos editing and a ma gonnna use video editing which is my dream project.I will help you in any any materials if you want
+                                                  help in designing.Thank you!!!!!!
+                                                </i>
+                                          </blockquote>
+                                          <div class="quote-author-info">
+                                                <p class="quote-author">Linda Johnson</p>
+                                                <p class="quote-author-pos">Model</p>
+                                          </div>
+                                      </div>
+                                      <a href="#" class="buttom project-extra-toggle">More</a>
+                                </div>
+                          </div>
+                          <div class="project-extra">
+                              <ul class="project-extra-images">
+                                <li><img src="images/project-extra-1.jpg"></li>
+                                <li><img src="images/p2.jpg"></li>
+                                <li><img src="images/p3.jpeg"></li>
+                                <li><img src="images/p4.jpg"></li>
+                                <li><img src="images/p5.jpg"></li>
+                                <li><img src="images/p6.jpg"></li>
+                                </ul>
+
+                                <ul class="project-extra-info">
+                                        <li>
+                                            <i class="fas fa-camera"></i>
+                                            <p class="Label">Photos Taken:<br><spam class="label-descr">322 Photos</spam></p>
+                                        </li>
+                                        <li>
+                                            <i class="fal fa-clock"></i>
+                                            <p class="Label">Time Spent:<br><spam class="label-descr">12 hours</spam></p>
+                                        </li>
+                                        <li>
+                                            <i class="fal fa-globe"></i>
+                                            <p class="Label">Location:<br><spam class="label-descr">Kapan,Kathmandu,Nepal</spam></p>
+                                        </li>
+                          </div>
+                    </li>
+                  </ul>
+                </ul>
+                    <li class="project park">
+                          <div class="project-visible-content">
+                                <div class="container-sm">
+                                      <h3>National Park Photoshoot</h3>
+                                      <div class="project-text-wapper">
+                                          <blockquote>
+                                                <i>We and our team often find project in Photography to click photos in forest areas and other places like national parks.
+                                                  We and our team often find project in Photography.
+
+                                                </i>
+                                          </blockquote>
+                                          <div class="quote-author-info">
+                                                <p class="quote-author">John Treeman</p>
+                                                <p class="quote-author-pos">Bride</p>
+                                          </div>
+                                      </div>
+                                      <a href="#" class="buttom project-extra-toggle">More</a>
+                                </div>
+                          </div>
+                        </li>
+                          <div class="project-extra">
+                              <ul class="project-extra-images">
+                                <li><img src="images/project-extra-1.jpg"></li>
+                                <li><img src="images/p2.jpg"></li>
+                                <li><img src="images/p3.jpeg"></li>
+                                <li><img src="images/p4.jpg"></li>
+                                <li><img src="images/p5.jpg"></li>
+                                <li><img src="images/p6.jpg"></li>
+                                </ul>
+
+                                <ul class="project-extra-info">
+                                        <li>
+                                            <i class="fas fa-camera"></i>
+                                            <p class="label">Photos Taken:<br><spam class="label-descr">203 Photos</spam></p>
+                                        </li>
+                                        <li>
+                                            <i class="fal fa-clock"></i>
+                                            <p class="label">Opening time:<br><spam class="label-descr">7AM to 9PM</spam></p>
+                                        </li>
+                                        <li>
+                                            <i class="fal fa-globe"></i>
+                                            <p class="label">Location:<br><spam class="label-descr">Kapan,Kathmandu,Nepal</spam></p>
+                                        </li>
+                          </div>
+                    </li>
+              </ul>
+
+      <div class="contact-me">
+          <h2>Contact me</h2>
+      </div>
+      <div class="contact-me-bg">
+              <div class="container">
+                  <ul class="contact-list">
+                  <li>
+                      <i class="fas fa-map-marker-alt"></i>
+                      <h6>Address</h6>
+                      <p>Kapan,Kathmandu,Nepal</p>
+                  </li>
+                  <li>
+                        <i class="fas fa-envelope"></i>
+                        <h6>E-mail</h6>
+                        <p>hotel@gmail.com</p>
+                  </li>
+                  <li>
+                        <i class="fas fa-mobile-alt"></i>
+                        <h6>+97798090900</h6>
+                  </li>
+                </ul>
+                <form>
+First name:<br>
+<input type="text" name="firstname"><br>
+Last name:<br>
+<input type="text" name="lastname">
+</form>
+                <footer>
+                      <ul class="social-btn-list clear-fix">
+                            <li><a href="#" class="twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a></li>
+
+                            <li><a href="#" class="instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a></li>
+
+                            <li><a href="#" class="facebook">
+                                <i class="fab fa-facebook-square"></i>
+                            </a></li>
+                      </ul>
+                          <p>Paras Subedi.All right reserved.</p>
+                </footer>
+              </div>
+            </div>
+  </body>
 </html>
